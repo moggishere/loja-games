@@ -20,6 +20,9 @@ public class Categoria {
     @Size(min=1, max=100, message = "O título deve ter dados")
     private String tipo;
 
+    @NotNull
+    @Size(min=1, max=300, message = "A descrição deve ter dados")
+    private String descricao;
 
     public Long getId() {
         return this.id;
@@ -35,6 +38,15 @@ public class Categoria {
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
+    }
+
+
+    public String getDescricao() {
+        return this.descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 
 }
