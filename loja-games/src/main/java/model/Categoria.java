@@ -17,7 +17,7 @@ public class Categoria {
     private Long id;
 
     @NotNull
-    @Size(min=1, max=100, message = "O título deve ter dados")
+    @Size(min=1, max=100, message = "O tipo deve ter dados")
     private String tipo;
 
     @NotNull
